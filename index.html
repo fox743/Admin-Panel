@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebbok</title>
+    <style>
+          body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            color: #1877f2;
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .container1 {
+            background-color: white;
+            display: flex;
+            max-width: 1000px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+
+        }
+
+        .left {
+            padding: 50px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #606770;
+        }
+
+        .right {
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        form {
+            width: 100%;
+        }
+
+        .left p {
+            font-size: 18px;
+            color: #606770;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-style: 16px;
+            margin-top: 10px;
+        }
+
+        button.new-account {
+            background-color: #42b72a;
+            margin-top: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #1877f2;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        @media (max-width: 500px) {
+            .container1 {
+            background-color: white;
+            display: flex;
+            max-width: 1000px;
+            width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
+        }}
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="left">
+            <h1>facebook</h1>
+            <p>Facebook tanıdıklarınla iletişim kurmanı ve hayatında olup bitenleri paylaşmanı sağlar.</p>
+            <h2 id="registr"></h2>
+        </div>
+        <div class="right">
+            <form>
+                <input type="email" placeholder="E-posta veya Telefon Numarasi">
+                <input type="password" placeholder="Şifre">
+                <button type="submit">Giriş Yap</button>
+                <a href="#">Şifreni mi Unuttun?</a>
+                <button type="button" class="new-account">Yeni hesab oluştur</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="swich.js"></script>
+</body>
+</html>
