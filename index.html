@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Facebbok</title>
     <style>
-          body,
+        body,
         html {
             margin: 0;
             padding: 0;
@@ -92,17 +93,42 @@
             margin-top: 10px;
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 768px) {
             .container1 {
-            background-color: white;
-            display: flex;
-            max-width: 1000px;
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgb(0, 0, 0, 0.1);
-        }}
+                flex-direction: column;
+                width: 90%;
+                padding: 20px;
+            }
+
+            .left,
+            .right {
+                padding: 20px;
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 36px;
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+                font-size: 16px;
+            }
+
+            form {
+                width: 100%;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+
+        }
     </style>
 </head>
+
 <body>
     <div class="container1">
         <div class="left">
@@ -123,4 +149,5 @@
 
     <script src="swich.js"></script>
 </body>
+
 </html>

@@ -8,8 +8,12 @@ switch (`${Ad}-${sifre}`) {
     netice = 'Admin, Xos Gelmisiniz';
     break;
 
+
   case 'Celal-1234':
     netice = 'Celal Bey, Saytimize Xos Gelmisiniz';
+    break;
+  case 'Nurlan-1234':
+    netice = 'Serefsiz Bey, Saytimize Xos Gelmisiniz';
     break;
 
   case 'Fatime-1234':
